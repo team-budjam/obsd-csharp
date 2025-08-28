@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Data.SqlClient;
 
-namespace MyConsole;
+namespace Database.ADONET;
 
 // Object
 public class DBManager
