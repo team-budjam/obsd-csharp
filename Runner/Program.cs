@@ -1,4 +1,4 @@
-﻿using Database.ADONET;
+﻿using Models.DB;
 
 var setUpToken = new SetupToken
 {
@@ -6,6 +6,6 @@ var setUpToken = new SetupToken
     DBSource = SetupToken.Source.LocalHost,
 };
 
-using var connection = Connection.Create(setUpToken);
+using var connection = Connector.Create(setUpToken);
 
 await connection.Connect();
