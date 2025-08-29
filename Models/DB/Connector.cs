@@ -7,10 +7,10 @@ using Microsoft.Data.SqlClient;
 namespace Models.DB;
 
 // Object
-public class Connector : IDisposable
+public class Connector
 {
     // core
-    public static Connector Create(SetupToken token)
+    public static Connector CreateBy(SetupToken token)
     {
         return new Connector() { Token = token };
     }
@@ -56,7 +56,7 @@ public class Connector : IDisposable
             Console.WriteLine(e);
         }
     }
-    public async void Dispose()
+    public async Task Disconnect()
     {
         if (_Connection is not null)
         {
