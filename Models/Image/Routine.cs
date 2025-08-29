@@ -4,7 +4,7 @@
 // Routine
 public static class Routine
 {
-    public static async Task ProcessPartyPNGInDownloads()
+    public static void ProcessPartyPNGInDownloads()
     {
         // 1) Windows 사용자 프로필 아래의 Downloads 폴더 계산
         var downloads = Path.Combine(

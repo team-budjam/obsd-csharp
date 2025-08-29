@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 
-namespace Models.DB;
+namespace Tools.SQLServer;
 
 
 // Object
@@ -24,7 +24,7 @@ public readonly record struct SetupToken
         // core
         public required string RawValue { get; init; }
 
-        public static Source LocalHost = new Source { RawValue = "." };
+        public static Source LocalHost = new Source { RawValue = "(localdb)\\MSSQLLocalDB" };
     }
 
 

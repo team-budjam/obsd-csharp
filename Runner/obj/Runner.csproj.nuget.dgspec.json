@@ -4,12 +4,12 @@
     "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Runner\\Runner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Models.csproj": {
+    "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Models.csproj",
-        "projectName": "Models",
-        "projectPath": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Tools.csproj",
+        "projectName": "Tools",
+        "projectPath": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Tools.csproj",
         "packagesPath": "C:\\Users\\kmw45\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\obj\\",
         "projectStyle": "PackageReference",
@@ -380,8 +380,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Models.csproj"
+              "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Tools.csproj": {
+                "projectPath": "C:\\Users\\kmw45\\minwoo\\obsd-csharp\\Models\\Tools.csproj"
               }
             }
           }
