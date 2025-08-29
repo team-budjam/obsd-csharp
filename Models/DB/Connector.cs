@@ -1,5 +1,6 @@
 ﻿using System.Collections.Concurrent;
 using System.Data;
+using System.Formats.Asn1;
 using System.Runtime.CompilerServices;
 using System.Xml;
 using Microsoft.Data.SqlClient;
@@ -58,6 +59,7 @@ public class Connector
     }
     public async Task Disconnect()
     {
+        // mutate
         if (_Connection is not null)
         {
             try
@@ -75,7 +77,33 @@ public class Connector
             }
         }
 
-        Console.WriteLine("Connection이 제거되었습니다.");
+        Console.WriteLine("Disconnect되었습니다.");
+
+        return;
+    }
+
+    public async Task Remove()
+    {
+        // mutate
+        if (_Connection is not null)
+        {
+            try
+            {
+                if (_Connection.State != System.Data.ConnectionState.Closed)
+                {
+                    await _Connection.CloseAsync();   // 연결 종료
+                }
+
+                _Connection.Dispose();      // 리소스 해제
+            }
+            finally
+            {
+                _Connection = null;         // 참조 제거
+            }
+        }
+
+        this.Delete();
+
         return;
     }
 

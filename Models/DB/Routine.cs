@@ -6,7 +6,7 @@ namespace Models.DB;
 // Routine
 public static class Routine
 {
-    public static async Task First()
+    public static async Task ConnectionTest()
     {
         // define value
         var setUpToken = new SetupToken
@@ -18,10 +18,13 @@ public static class Routine
         // create object
         var connection = Connector.CreateBy(setUpToken);
 
-        // execute action(Connector.Connect)
+        // execute action
         await connection.Connect();
 
-        // execute action(Connector.Disconnect)
+        // execute action
         await connection.Disconnect();
+
+        // execute action
+        await connection.Remove();
     }
 }
