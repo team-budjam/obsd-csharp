@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csproj", "{8D2B03AD-1FC6-4067-AABD-C760AA7BF5A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Models\Tools.csproj", "{84C7B35B-EDA9-4D07-A520-B3A3D4B23193}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{84C7B35B-EDA9-4D07-A520-B3A3D4B23193}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
