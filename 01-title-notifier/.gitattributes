@@ -1,0 +1,14 @@
+# Set default behavior, in case users don't have core.autocrlf set.
+* text=auto eol=crlf
+
+# C# files
+*.cs
+
+# Solution and project files
+*.sln
+*.csproj
+
+# Other text files
+*.md
+*.json
+*.xml

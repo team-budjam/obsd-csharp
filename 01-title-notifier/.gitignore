@@ -1,0 +1,41 @@
+# Visual Studio generated files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.idea/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Rider
+.idea/
+
+# Logs
+[Ll]ogs/
+*.log
+
+# User-specific files from the project structure
+TitleSystem.slnLaunch.user
+TitleWeb.csproj.user
+
+# Test Results
+TestResult.xml
+*.VisualState.xml
+
+# App settings that might contain secrets
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+
+# Launch settings
+**/Properties/launchSettings.json
