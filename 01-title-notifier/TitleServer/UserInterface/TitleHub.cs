@@ -14,6 +14,7 @@ public class TitleHub(TitleServer titleServer) : Hub
         Console.WriteLine($"현재 Subscribers 수: {titleServer.SubscribersCount}");
     }
 
+    // 이는 TitleServer로 이동
     public class TitleEventHandler(IHubContext<TitleHub> hub)
     {
         private readonly IHubContext<TitleHub> _hubContext = hub;

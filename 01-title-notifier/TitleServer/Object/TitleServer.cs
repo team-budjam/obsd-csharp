@@ -3,6 +3,7 @@
 namespace TitleWeb.Object;
 
 
+
 // Object
 public class TitleServer(TitleHub.TitleEventHandler eventHandler)
 {
